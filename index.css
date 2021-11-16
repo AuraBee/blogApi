@@ -1,0 +1,83 @@
+/* * {
+    box-sizing: border-box;
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+ font-family: 'Gluten', cursive;
+ font-size: 2.1rem;
+    
+}
+#top-nav{
+    height: 30px;
+    width: 100%;
+    background: pink;
+    padding: 2em;
+    /* text-align: center; */
+    margin-top: 0;
+    margin-bottom: 10em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position:fixed;
+
+    }
+    
+h1 {
+    margin: 0;
+    font-size: 250%;
+    font-weight:800;
+}
+
+
+h3 {
+   color: darkblue;
+   font-weight: 600;
+   padding: 1em 2em;
+}
+
+p {
+    font-weight: 400;
+    padding: 1em 2em;
+}
+
+
+form {
+    padding: 10em 2em 3em;
+    display: grid;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    max-width:50%;
+    margin: 0 auto;
+}
+
+input#post-title, textarea#post-body {
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline;
+    width: 60%;
+    max-width:50%;
+    padding: .5em 1em;
+    margin-top: 55em;
+    margin: 0 auto;
+    background-color: hotpink;
+    font-size: 120%;
+    font-weight: 500;
+    border:none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#blog-list {
+    padding: 5em 2em 2em;
+   
+}
