@@ -1,15 +1,11 @@
-/**
- Challenge:
+/*step one
+fetching the array of data from Api
+iterating over the array
+formatting with template scrings
+rendering the data on page
+*/
 
- Style it up!
- 
- * Add a short (~30px height) fixed navbar at the top with the text "BlogSpace". Remember to pad the top of your content so it doesn't get hidden behind the navbar.
- * Add a font from Google Fonts.
- * Any other styling you want to make it look nice!
- 
- */
-
-fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+fetch("https://jsonplaceholder.typicode.com/posts")
     .then(res => res.json())
     .then(data => {
         const postsArr = data.slice(0, 5)
@@ -22,4 +18,29 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
             `
         }
         document.getElementById("blog-list").innerHTML = html
-    })
+    })    
+
+
+
+/*Step Two 
+ *  added "submit" event to  form (when. button 'is 'clicked')
+    *prevented refresh of teh page with 'preventDefault'
+    consts set up for post-tile and post-body
+    * title 'value' and body 'value'  - object added 
+    * (with a "title" property and "body" property)
+ * test this with console log aka log  the object to the console
+*/
+
+document.getElementById("new-post").addEventListener('submit', function(event){
+    event.preventDefault();
+    const postTitle = document.getElementById("post-title").value
+    const postBody = document.getElementById("post-body").value
+
+    const data = {
+        title: postTitle,
+        body: postBody
+    }
+
+    console.log(data)
+ 
+})
